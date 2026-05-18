@@ -1,0 +1,14 @@
+Dataset Download
+----------------
+The full training dataset is provided separately because it is too large to include directly in the software ZIP file. The dataset is approximately 12.6 GB when zipped and 14.6 GB when extracted.
+
+The dataset can be downloaded separately from the following Google Drive link:
+
+    https://drive.google.com/file/d/1nu0tGKkl-7D9QcM4DcleFhq9gf2CN9f5/view?usp=sharing
+
+After downloading, extract or place the dataset folder in the main project directory with the following structure:
+
+    FYP_code/
+    └── Dataset/
+        ├── renders/
+        └── photos/

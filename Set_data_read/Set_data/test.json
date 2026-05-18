@@ -1,0 +1,16 @@
+{
+    "set_number": "test",
+    "set_name": "test",
+    "parts": [
+        {
+            "part_num": "3001",
+            "part_name": "Brick 2 x 4",
+            "quantity":10
+        },
+        {
+            "part_num": "3003",
+            "part_name": "Brick 2 x 2",
+            "quantity": 1
+        }
+    ]
+}

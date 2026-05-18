@@ -1,0 +1,14 @@
+Raspberry Pi Login Details
+For assessment purposes only
+
+Hostname:
+lego-pi.local
+
+Username:
+ananta
+
+Password:
+lego2026
+
+SSH command:
+ssh ananta@lego-pi.local

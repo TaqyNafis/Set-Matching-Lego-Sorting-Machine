@@ -1,0 +1,43 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
+.env
+*.env
+
+# Dataset / large files
+dataset/
+captures/
+
+# Model checkpoints / training outputs
+checkpoints/
+runs/
+logs/
+outputs/
+
+# Ignore large Rebrickable database files
+Set_data_read/Database/*.csv
+
+# Keep the Database folder in Git
+!Set_data_read/Database/.gitkeep
+
+# Compressed files
+*.zip
+*.rar
+*.7z
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE/editor
+.vscode/
+.idea/
