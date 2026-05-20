@@ -88,11 +88,41 @@ FYP_code/
 │       ├── [part_class_folder]/
 │       └── ...
 │
-├── images/
-│   ├── Hardware_setup_front.jpg
-│   ├── Hardware_setup_top.jpg
-│   └── Pi_servo_pin_setup.jpg
+images/
+├── Conveyor image/
+│   ├── Detection Conveyor Front.jpg
+│   ├── Detection Conveyor Side.jpg
+│   ├── Detection Conveyor Top.jpg
+│   ├── Sorting  Conveyor Side.jpg
+│   ├── Sorting Conveyor Back.jpg
+│   ├── Sorting Conveyor Front.jpg
+│   └── Sorting Conveyor Top.jpg
 │
+├── Conveyor image No Belt/
+│   ├── Detection Conveyor Back.jpg
+│   ├── Detection Conveyor Front.jpg
+│   ├── Detection Conveyor Side 1.jpg
+│   ├── Detection Conveyor Side 2.jpg
+│   ├── Detection Conveyor Top.jpg
+│   ├── Sorting Conveyor Back.jpg
+│   ├── Sorting Conveyor Front.jpg
+│   ├── Sorting Conveyor Side 1.jpg
+│   ├── Sorting Conveyor Side 2.jpg
+│   └── Sorting Conveyor Top.jpg
+│
+├── Hardware/
+│   ├── belt.jpg
+│   ├── camera.jpg
+│   ├── converter.jpg
+│   ├── coupler.jpg
+│   ├── Motor.jpg
+│   ├── pi.jpg
+│   ├── pwm.jpg
+│   └── Servo.jpg
+│
+├── Hardware_setup_front.jpg
+├── Hardware_setup_top.jpg
+└── Pi_servo_pin_setup.jpg
 └── Set_data_read/
     ├── __init__.py
     ├── Dataset_read.py
