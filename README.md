@@ -9,10 +9,15 @@ The system detects a LEGO brick on a conveyor using OpenCV MOG2 background subtr
 
 ## Demo Video
 
-<video src="images/Demo%20Video.mp4" controls width="700"></video>
+<p align="center">
+  <a href="https://youtu.be/YiQE_hScU2o">
+    <img src="https://img.youtube.com/vi/YiQE_hScU2o/maxresdefault.jpg" alt="Demo Video" width="800">
+  </a>
+</p>
 
-[Watch the demo video](<images/Demo Video.mp4>)
-
+<p align="center">
+  <a href="https://youtu.be/YiQE_hScU2o">Watch the demo video on YouTube</a>
+</p>
 ## Main System Flow
 
 ```text
