@@ -18,6 +18,7 @@ The system detects a LEGO brick on a conveyor using OpenCV MOG2 background subtr
 <p align="center">
   <a href="https://youtu.be/YiQE_hScU2o">Watch the demo video on YouTube</a>
 </p>
+
 ## Main System Flow
 
 ```text
@@ -98,35 +99,31 @@ FYP_code/
     ├── Dataset_read_api.py
     │
     ├── Database/
-    │   ├── sets.csv
-    │   ├── inventories.csv
-    │   ├── inventory_parts.csv
-    │   └── parts.csv
+    │   └── .gitkeep
     │
     └── Set_data/
         ├── test.json
         └── 10696-1.json
 ```
 
-> Note: The `Dataset/` folder is not included directly in the software ZIP file due to file size. It can be downloaded using the dataset link below.
+> Note: The `Dataset/` folder is not included in this repository due to file size. The `Set_data_read/Database/` folder is also empty in this repository because the Rebrickable CSV database files are not included.
 
-## Raspberry Pi File
+## Dataset and Database Files
 
-`gate_control2.py` is included in the submission as the Raspberry Pi servo control script.
+### Training Dataset
 
-This file is used for controlling the servo gate on the Raspberry Pi. It should be placed on the Raspberry Pi at the script path configured in `sorting_pipeline.py`.
+The dataset used in this project is a combination of the following LEGO brick image datasets:
 
-## Dataset Download
+- [LDRAW based renders of LEGO bricks moving on a conveyor belt with extracted models](https://mostwiedzy.pl/en/open-research-data/ldraw-based-renders-of-lego-bricks-moving-on-a-conveyor-belt-with-extracted-models,202106131552249793221-0?_share=1e566d05eb6db0dd)  
+  T. M. Boiński, K. Zawora, S. Zaraziński, and B. Śledź, Version 3.0, Gdańsk University of Technology, 2021, doi: `10.34808/xfgk-6f77`.
 
-The full training dataset is provided separately because it is too large to include directly in the software ZIP file. The dataset is approximately 12.6 GB when zipped and 14.6 GB when extracted.
+- [Images of LEGO bricks](https://mostwiedzy.pl/en/open-research-data/images-of-lego-bricks,202309140837142278781-0)  
+  T. M. Boiński, Version 1.1, Gdańsk University of Technology, 2021, doi: `10.34808/arsb-4268`.
 
-The dataset can be downloaded separately from the following Google Drive link:
+- [LEGO bricks for training classification network](https://www.mostwiedzy.pl/en/open-research-data/lego-bricks-for-training-classification-network,618104539639776-0)  
+  T. M. Boiński, S. Zaraziński, and B. Śledź, Version 1.0, Gdańsk University of Technology, 2021, doi: `10.34808/3qfs-rt94`.
 
-```text
-https://drive.google.com/file/d/1nu0tGKkl-7D9QcM4DcleFhq9gf2CN9f5/view?usp=sharing
-```
-
-After downloading, extract or place the dataset folder in the main project directory with the following structure:
+After downloading or preparing the dataset, place it in the main project directory using this structure:
 
 ```text
 FYP_code/
@@ -136,6 +133,44 @@ FYP_code/
 ```
 
 The `Dataset/` folder is only required for training or retraining the model. It is not required for running the trained sorting system if `checkpoints/best_model.pt` and `artifacts/class_to_idx.json` are already provided.
+
+### Rebrickable CSV Database
+
+The `Set_data_read/Database/` folder is kept in the repository using `.gitkeep`, but the CSV database files are not included because they are large and can be downloaded separately.
+
+The Rebrickable LEGO catalog database can be downloaded from:
+
+[Rebrickable CSV File Downloads](https://rebrickable.com/downloads/)
+
+The required CSV files for local set matching are:
+
+```text
+sets.csv
+inventories.csv
+inventory_parts.csv
+parts.csv
+```
+
+After downloading and extracting the files, place them inside:
+
+```text
+FYP_code/
+└── Set_data_read/
+    └── Database/
+        ├── sets.csv
+        ├── inventories.csv
+        ├── inventory_parts.csv
+        └── parts.csv
+```
+
+Alternatively, the system can use the Rebrickable API instead of the local CSV database by setting `SET_SOURCE = "api"` in `sorting_pipeline.py`.
+
+
+## Raspberry Pi File
+
+`gate_control2.py` is included in the submission as the Raspberry Pi servo control script.
+
+This file is used for controlling the servo gate on the Raspberry Pi. It should be placed on the Raspberry Pi at the script path configured in `sorting_pipeline.py`.
 
 ## Selecting the LEGO Set
 
