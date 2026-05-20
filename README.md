@@ -7,6 +7,10 @@ This project is an automated LEGO sorting machine that uses computer vision, dee
 
 The system detects a LEGO brick on a conveyor using OpenCV MOG2 background subtraction, captures multiple images of the brick, classifies the part using a trained ResNet-50 model, checks whether the predicted part belongs to the selected LEGO set, and moves a servo gate to direct the brick to either the accepted or rejected path.
 
+## Demo Video
+
+[Watch the demo video](images/"Demo Video.mp4")
+
 ## Main System Flow
 
 ```text
