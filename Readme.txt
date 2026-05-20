@@ -334,9 +334,3 @@ Hardware setup images:
 
 Raspberry Pi servo pin setup image:
     images/Pi_servo_pin_setup.jpg
-
-Author
-------
-Ananta Taqy Nafis
-Final Year Project
-Automated LEGO Sorting Machine
