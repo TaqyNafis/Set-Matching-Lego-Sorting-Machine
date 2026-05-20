@@ -362,7 +362,7 @@ Before running the system, check that:
 1. Open a terminal in the main project folder:
 
 ```bash
-cd FYP_code
+cd <project_folder_name>
 ```
 
 2. Run the main system:
@@ -385,23 +385,30 @@ python main.py
 
 ## Additional Images
 
-Hardware setup images:
+### Hardware Setup
 
-```text
-images/Hardware_setup_front.jpg
-images/Hardware_setup_top.jpg
-```
+<p align="center">
+  <img src="images/Hardware_setup_front.jpg" alt="Hardware setup front view" width="700">
+</p>
 
-Raspberry Pi servo pin setup image:
+<p align="center">
+  <b>Hardware setup front view</b>
+</p>
 
-```text
-images/Pi_servo_pin_setup.jpg
-```
+<p align="center">
+  <img src="images/Hardware_setup_top.jpg" alt="Hardware setup top view" width="700">
+</p>
 
-## Author
+<p align="center">
+  <b>Hardware setup top view</b>
+</p>
 
-Ananta Taqy Nafis
+### Raspberry Pi Servo Pin Setup
 
-Final Year Project
+<p align="center">
+  <img src="images/Pi_servo_pin_setup.jpg" alt="Raspberry Pi servo pin setup" width="700">
+</p>
 
-Automated LEGO Sorting Machine
+<p align="center">
+  <b>Raspberry Pi servo pin setup</b>
+</p>
